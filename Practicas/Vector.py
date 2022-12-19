@@ -162,17 +162,3 @@ def GraphVectors(ax, vector, labels, compVectors):
             init_x = init_x + end_x
             init_y = init_y + end_y
             init_z = init_z + end_z
-            
-       
-
-    '''
-    print(ax.set_xlim([ min([a[0], b[0], c[0], 0]), max([a[0], b[0], c[0]]) ]))
-    print(ax.set_ylim([ min([a[1], b[1], c[1], 0]), max([a[1], b[1], c[1]]) ]))
-    print(ax.set_zlim([ min([a[2], b[2], c[2], 0]), max([a[2], b[2], c[2]]) ]))
-    # **** Quitar los prints cuando acabe
-    
-    # Impresion de los vectores que se graficaran
-    ax.quiver(0, 0, 0, a[0], a[1], a[2], color = 'b', label = labelA, arrow_length_ratio=0.1)
-    ax.quiver(0, 0, 0, b[0], b[1], b[2], color = 'g', label = labelB, arrow_length_ratio=0.1)
-    ax.quiver(0, 0, 0, c[0], c[1], c[2], color = 'r', label = labelC, arrow_length_ratio=0.1)
-    '''
