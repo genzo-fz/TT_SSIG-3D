@@ -120,6 +120,12 @@ def GraphLimitDefinition(ax, vector):
         min_axis_y = min(min_axis_y, vector[x][1])
         min_axis_z = min(min_axis_z, vector[x][2])
     
+    # En caso de que el minimo sea un num positivo, se reduce a 0, para que asi las lineas siempre
+    # se grafiquen desde el eje 0
+    min_axis_x = min(min_axis_x, 0)
+    min_axis_y = min(min_axis_y, 0)
+    min_axis_z = min(min_axis_z, 0)
+    
     # Establecimiento de los limites de cada eje (Punto max y min de cada eje de la Grafica
     # que sera mostrada al momento de esta ejecutarse, y sin aplicar zoom)
     print(ax.set_xlim([min_axis_x, max_axis_x]))
